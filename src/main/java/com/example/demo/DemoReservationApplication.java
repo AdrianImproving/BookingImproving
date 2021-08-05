@@ -100,8 +100,8 @@ public class DemoReservationApplication {
 	@Bean
 	public CommandLineRunner testApp(ReservationRepository repo) {
 		return args -> {
-			repo.save(new Reservation("Hotel 1", LocalDateTime.of(2019, Month.MARCH, 28, 14, 33, 48, 123456789)));
-			repo.save(new Reservation("Hotel 2", LocalDateTime.of(2020, Month.AUGUST, 10, 14, 33, 48, 123456789)));
+			repo.save(new Reservation("Jaime", LocalDateTime.of(2019, Month.MARCH, 28, 14, 33, 48, 123456789)));
+			repo.save(new Reservation("Aurora", LocalDateTime.of(2020, Month.AUGUST, 10, 14, 33, 48, 123456789)));
 			Iterable<Reservation> allReservations = repo.findAll();
 			System.out.println(repo.findAll());
 			System.out.println("All reservations in DB: " + allReservations);
