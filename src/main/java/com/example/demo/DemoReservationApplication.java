@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @SpringBootApplication
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping("/api")
+//@RequestMapping("/api")
 public class DemoReservationApplication {
 
 	@Autowired
